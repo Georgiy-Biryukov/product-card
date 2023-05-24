@@ -1,0 +1,179 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 197px;
+  width: 100%;
+  border-radius: 8px;
+  padding: 13px 8px 12px;
+  font-family: 'SF Pro Display', sans-serif;
+
+  &.light {
+    background-color: #f8f7f4;
+
+    .slick-dots {
+      li {
+        button::before {
+          color: #5c5c60;
+        }
+
+        &.slick-active {
+          button::before {
+            color: #3a270a;
+          }
+        }
+      }
+    }
+
+    .card-rating {
+      color: #171717;
+    }
+
+    .card-brand {
+      color: #555559;
+    }
+
+    .card-name {
+      color: #171717;
+    }
+
+    .card-description {
+      color: #555559;
+    }
+
+    .card-variant {
+      background: #a28b6e;
+      color: #ffffff;
+    }
+  }
+
+  &.dark {
+    background-color: #1c1c1e;
+
+    .slick-dots {
+      li {
+        button::before {
+          color: #606063;
+        }
+
+        &.slick-active {
+          button::before {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+
+    .card-rating {
+      color: #ffffff;
+    }
+
+    .card-brand {
+      color: #747474;
+    }
+
+    .card-name {
+      color: #ffffff;
+    }
+
+    .card-description {
+      color: #747474;
+    }
+
+    .card-variant {
+      background: #2e2e30;
+      color: #ffffff;
+    }
+  }
+
+  .card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+
+    .card-rating {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 4px;
+      z-index: 10;
+      font-size: 10px;
+      line-height: 14px;
+
+      svg {
+        margin-right: 4px;
+      }
+    }
+
+    .card-interaction {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      position: absolute;
+      top: 0;
+      right: 4px;
+      z-index: 10;
+
+      svg {
+        cursor: pointer;
+      }
+    }
+
+    .card-image {
+      width: 100%;
+
+      img {
+        cursor: pointer;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+
+    .card-brand {
+      font-size: 12px;
+      line-height: 16px;
+      margin-bottom: 4px;
+    }
+
+    .card-name {
+      font-size: 14px;
+      line-height: 16px;
+      margin: 0 0 4px;
+    }
+
+    .card-description {
+      font-size: 12px;
+      line-height: 16px;
+      margin: 0 0 12px;
+    }
+
+    .card-variant {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 4px 8px;
+      border-radius: 8px;
+      max-width: 181px;
+      margin: 0 auto;
+      font-size: 12px;
+      line-height: 16px;
+
+      .card-manufacturer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .manufacturer-image {
+          margin-right: 6px;
+        }
+      }
+    }
+  }
+}

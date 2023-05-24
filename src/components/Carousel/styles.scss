@@ -1,0 +1,31 @@
+.slick-dots {
+  position: static;
+  display: flex !important;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  li {
+    width: 5px;
+    height: 5px;
+
+    button {
+      width: 5px;
+      height: 5px;
+    }
+
+    button::before {
+      opacity: 1;
+      width: 8px;
+      height: 5px;
+      line-height: 5px;
+      font-size: 3px;
+    }
+
+    &.slick-active {
+      button::before {
+        font-size: 5px;
+        opacity: 1;
+      }
+    }
+  }
+}

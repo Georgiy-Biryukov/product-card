@@ -1,0 +1,25 @@
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display?styles=98774');
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+}
+
+.cards-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.cards-item {
+  display: flex;
+}
