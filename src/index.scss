@@ -4,6 +4,14 @@ body {
   margin: 0;
 }
 
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: black;
+}
+
 * {
   box-sizing: border-box;
   font-weight: 400;
@@ -18,6 +26,7 @@ img {
   align-items: center;
   justify-content: center;
   gap: 50px;
+  margin: 0;
 }
 
 .cards-item {

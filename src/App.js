@@ -7,10 +7,10 @@ function App() {
       <div className='container'>
         <ul className='cards-list'>
           <li className='cards-item'>
-            <Card />
+            <Card variant='dark' />
           </li>
           <li className='cards-item'>
-            <Card variant='dark' />
+            <Card />
           </li>
         </ul>
       </div>
